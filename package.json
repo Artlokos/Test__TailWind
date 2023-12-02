@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "check": "prettier --check './**/*.{html,css,js}'",
     "format": "prettier --write './**/*.{html,css,js}'",
-    "lint":"stylelint '**/*.css'",
-    "lintfix": "stylelint '**/*.css' --fix"
-
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix",
+    "atomize": "atomizer -o ./dist/output.css --watch index.html"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,11 @@
   },
   "homepage": "https://github.com/Artlokos/posmotri_v_okno#readme",
   "dependencies": {
+    "atomizer": "^3.28.0",
     "prettier": "^3.1.0",
     "stylelint": "^15.11.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
   }
 }
